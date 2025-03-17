@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mailing List Signup</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header-h1">Jelly of the Month Mailing List</h1>
+    </header>
+    <main class="main">
+        <h3>All fields are required</h3>
+        <form action="results.html" method="GET" enctype="multipart/form-data">
+            <div>
+                <label class="form-label" for="name">Name:</label>
+                <input class="form-input" type="text" id="name" name="name" placeholder="firstName lastName" required>
+            </div>
+            <div>
+                <label class="form-label" for="address">Address:</label>
+                <input class="form-input" type="text" id="address" name="address" placeholder="123 Some Street" required>
+            </div>
+            <div>
+                <label class="form-label" for="email">Email:</label>
+                <input class="form-input" type="email" id="email" name="email" placeholder="jsmith@domain.tld" required>
+            </div>
+            <div>
+                <label class="form-label" for="phone">Phone:</label>
+                <input class="form-input" type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
+            </div>
+            <div>
+                <label class="form-label" for="date">Birthday:</label>
+                <input class="form-input" type="date" id="date" name="date" min="1920-01-01" required>
+            </div>
+            <div>
+                Gender:
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="male" value="male" required>
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="female" value="female">
+                    <label for="none">No Answer</label>
+                    <input type="radio" name="gender" id="none" value="none">
+            </div>
+            <div>
+                <label class="form-label" for="eyeColor">Eye Color:</label>
+                <select class="form-input" id="eyeColor" name="eyeColor" required>
+                    <option value="" disabled selected>Select One</option>
+                    <option value="blue">Blue</option>
+                    <option value="brown">Brown</option>
+                    <option value="green">Green</option>
+                    <option value="hazel">Hazel</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div>
+                <label class="form-label" for="bio">Bio:</label>
+                <textarea class="form-input" name="bio" id="bio" cols="30" rows="10" placeholder="Tell us about yourself"></textarea>
+            </div>
+            <br>
+            <button type="reset" class="form-button">Reset</button>
+            <button type="submit" class="form-button">Submit</button>
+        </form>
+        <div class="message">
+            <p class="p-message">Click the button below for a message from our sponsors.<br>
+                <button class="msg-btn">Click Me</button>
+                <script src="message.js"></script>
+            </p>
+        </div>
+    </main>
+    <footer class="footer">
+        <!-- <div class="message">
+            <p class="p-message">Click the button below for a message from our sponsors.<br>
+                <button class="msg-btn">Click Me</button>
+                <script src="message.js"></script>
+            </p>
+        </div> -->
+        Copyright &copy; 2025<br>
+        All rights reserved<br>
+        <a href="https://github.com/jpatton1979" target="_blank">Johnny Patton</a>
+    </footer>
+</body>
+</html>

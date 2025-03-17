@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #DFD6A7;
+    box-sizing: border-box;
+}
+
+.header {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.5em;
+}
+
+.main {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.form-label {
+    display: inline-block;
+    margin: 3px 0;
+}
+
+.form-input {
+    background-color: whitesmoke;
+}
+
+select option {
+    background: whitesmoke;
+}
+
+.form-button {
+    background-color: rgb(190, 182, 182);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.p-message
+{
+    padding: 30px;
+}
+
+.msg-btn {
+    background-color: rgb(190, 182, 182);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 20px;    
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer a {
+    background-color: #333;
+    color: #E6BD56;
+}
+
+.footer a:visited {
+    color: #BEBFF4;
+}
